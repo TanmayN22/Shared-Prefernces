@@ -36,6 +36,9 @@ class _AppScreenState extends State<AppScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Name"),
+      ),
       body: Center(
         child: Text(_savedData ?? 'No Data Saved'),
       ),
