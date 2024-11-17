@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/profile.dart';
+import 'package:flutter_application_1/todo.dart';
 import 'app_scrren.dart';
 import 'theme.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -43,7 +46,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const ThemeScreen()));
                 },
-                child: const Text('Theme'))
+                child: const Text('Theme')),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const TodoScreen()));
+                },
+                child: const Text('Todo')),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const ProfileScreen()));
+                },
+                child: const Text('Profile'))
           ],
         ));
   }
