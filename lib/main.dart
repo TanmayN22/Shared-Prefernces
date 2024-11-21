@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/game.dart';
 import 'package:flutter_application_1/profile.dart';
+import 'package:flutter_application_1/shopping.dart';
 import 'package:flutter_application_1/todo.dart';
 import 'app_scrren.dart';
 import 'theme.dart';
@@ -44,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(builder: (context) => const AppScreen()));
                     },
-                    child: const Text('NAme')),
+                    child: const Text('Name')),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(builder: (context) => const ThemeScreen()));
@@ -64,7 +65,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(builder: (context) => const GameScreen()));
                     },
-                    child: const Text('Game'))
+                    child: const Text('Game')),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const ShopScreen()));
+                    },
+                    child: const Text('Shop'))
               ],
             ),
           ),
