@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/category.dart';
 import 'package:flutter_application_1/game.dart';
 import 'package:flutter_application_1/profile.dart';
 import 'package:flutter_application_1/shopping.dart';
@@ -70,7 +71,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(builder: (context) => const ShopScreen()));
                     },
-                    child: const Text('Shop'))
+                    child: const Text('Shop')),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const CategoryScreen()));
+                    },
+                    child: const Text('Tasks')),
               ],
             ),
           ),
